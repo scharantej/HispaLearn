@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish Quiz</title>
+</head>
+<body>
+<h1>Quiz {{ quiz_id }}: Test Your Knowledge</h1>
+<p>Answer the following questions to test your knowledge of Spanish.</p>
+<form action="/submit_quiz" method="POST">
+<ol>
+<li>What is the Spanish word for "hello"?
+<input type="radio" name="answer1" value="Hola"> Hola
+<input type="radio" name="answer1" value="Buenos días"> Buenos días
+<input type="radio" name="answer1" value="Buenas tardes"> Buenas tardes
+</li>
+<li>How do you say "my name is" in Spanish?
+<input type="radio" name="answer2" value="Me llamo"> Me llamo
+<input type="radio" name="answer2" value="Mi nombre es"> Mi nombre es
+<input type="radio" name="answer2" value="Soy"> Soy
+</li>
+<li>What is the Spanish word for "thank you"?
+<input type="radio" name="answer3" value="Gracias"> Gracias
+<input type="radio" name="answer3" value="De nada"> De nada
+<input type="radio" name="answer3" value="Por favor"> Por favor
+</li>
+</ol>
+<input type="submit" value="Submit">
+</form>
+{% if feedback %}
+<p>{{ feedback }}</p>
+{% endif %}
+</body>
+</html>
+
