@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spanish Exercise</title>
+</head>
+<body>
+<h1>Exercise {{ exercise_id }}: Fill in the Blanks</h1>
+<p>Fill in the blanks with the correct Spanish words.</p>
+<form action="/submit_exercise" method="POST">
+<ul>
+<li>Hola, me llamo _____. - Hello, my name is _____.
+<input type="text" name="answer1">
+</li>
+<li>¿Cómo estás? - How are you?
+<input type="text" name="answer2">
+</li>
+<li>Estoy bien, gracias. - I am fine, thank you.
+<input type="text" name="answer3">
+</li>
+</ul>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
